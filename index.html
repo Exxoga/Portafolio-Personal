@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Audiowide&family=Press+Start+2P&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./css/materialize.css">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Portafolio Personal</title>
 </head>
@@ -16,13 +17,13 @@
 <body>
   <header class="card">
     <h1 class="title text_decoration">Macoding</h1>
-    <div class="container">
-      <nav class="nav">
-        <p class="hidden">Macoding</p>
-        <div class="nav_links">
-          <a href="#sobre_mi" class="nav_link">Sobre mi</a>
-          <a href="#skillset" class="nav_link">Skillset</a>
-          <a href="#proyectos" class="nav_link">Proyectos</a>
+    <div class="contenedor">
+      <nav class="navigator browser-default">
+        <p class="hidden browser-default">Macoding</p>
+        <div class="navigator_links">
+          <a href="#sobre_mi" class="navigator_link">Sobre mi</a>
+          <a href="#skillset" class="navigator_link">Skillset</a>
+          <a href="#proyectos" class="navigator_link">Proyectos</a>
         </div>
       </nav>
       <div class="hero">
@@ -66,9 +67,56 @@
 
     </article>
     <article id="proyectos" class="proyectos">
-      <div class="proyectos_div">
-        <p class="proyectos_text">Si deseas ver mis proyectos:</p>
-        <a href="#" class="nav_link proyectos_link">Click aquí</a>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h2>Mis Proyectos</h2>
+            <div class="carousel center-align">
+              <div class="carousel-item">
+                <h3>Administrador de Citas</h3>
+                <div class="linea"></div>
+                <a href="#" target="_blank">Click aquí</a>
+                <img src="./img/dog.jpg" alt="perro">
+              </div>
+              <div class="carousel-item">
+                <h3>Cotizador de Criptomonedas</h3>
+                <div class="linea"></div>
+                <a href="#" target="_blank">Click aquí</a>
+                <img src="./img/cripto.jpg" alt="criptomonedas">
+              </div>
+              <div class="carousel-item">
+                <h3>Carrito de Compras</h3>
+                <div class="linea"></div>
+                <a href="#" target="_blank">Click aquí</a>
+                <img src="./img/carrito.jpg" alt="carrito de compras">
+              </div>
+              <div class="carousel-item">
+                <h3>Cotizador Seguro</h3>
+                <div class="linea"></div>
+                <a href="#" target="_blank">Click aquí</a>
+                <img src="./img/seguro.jpg" alt="seguro carro">
+              </div>
+              <div class="carousel-item">
+                <h3>Administrador de Gastos</h3>
+                <div class="linea"></div>
+                <a href="#" target="_blank">Click aquí</a>
+                <img src="./img/presupuesto.jpg" alt="presupuesto">
+              </div>
+              <div class="carousel-item">
+                <h3>Administrador de Clientes</h3>
+                <div class="linea"></div>
+                <a href="#" target="_blank">Click aquí</a>
+                <img src="./img/clientes.jpg" alt="clientes cartoon">
+              </div>
+              <div class="carousel-item">
+                <h3>Buscador del Clima</h3>
+                <div class="linea"></div>
+                <a href="#" target="_blank">Click aquí</a>
+                <img src="./img/clima.jpg" alt="variacion del clima">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </article>
     <div class="button">
@@ -88,6 +136,7 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="./js/materialize.min.js"></script>
   <script src="./js/app.js" type="module"></script>
 </body>
 

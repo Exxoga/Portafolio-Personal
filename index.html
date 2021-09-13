@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Audiowide&family=Press+Start+2P&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Portafolio Personal</title>
 </head>
@@ -17,7 +18,7 @@
 <body>
   <header class="card">
     <h1 class="title text_decoration">Macoding</h1>
-    <div class="contenedor">
+    <div class="contenedor ">
       <nav class="navigator browser-default">
         <p class="hidden browser-default">Macoding</p>
         <div class="navigator_links">
@@ -67,56 +68,155 @@
 
     </article>
     <article id="proyectos" class="proyectos">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <h2>Mis Proyectos</h2>
-            <div class="carousel center-align">
-              <div class="carousel-item">
-                <h3>Administrador de Citas</h3>
-                <div class="linea"></div>
-                <a href="#" target="_blank">Click aquí</a>
-                <img src="./img/dog.jpg" alt="perro">
+      <h2 class="proyectos_title">Mis proyectos</h2>
+      <div id="swiper" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide-detalles">
+              <h3>Administrador de pacientes</h3>
+              <div class="swiper-slide-links">
+                <a href="https://macodingadministradorcitas.netlify.app/" target="_blank">
+                  <p>Pagina aquí</p>
+                </a>
+                <a href="https://github.com/Exxoga/Administrador-de-pacientes" target="_blank">
+                  <p>Codigo aquí</p>
+                </a>
               </div>
-              <div class="carousel-item">
-                <h3>Cotizador de Criptomonedas</h3>
-                <div class="linea"></div>
-                <a href="#" target="_blank">Click aquí</a>
-                <img src="./img/cripto.jpg" alt="criptomonedas">
+            </div>
+            <div class="swiper-slide-img">
+              <img src="./img/dog.jpg" alt="perro y su dueño">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-detalles">
+              <h3>Cotizador de criptomonedas</h3>
+              <div class="swiper-slide-links">
+                <a href="https://macodingcotizadorcriptomonedas.netlify.app/" target="_blank">
+                  <p>Pagina aquí</p>
+                </a>
+                <a href="https://github.com/Exxoga/Cotizador-criptomonedas" target="_blank">
+                  <p>Codigo aquí</p>
+                </a>
               </div>
-              <div class="carousel-item">
-                <h3>Carrito de Compras</h3>
-                <div class="linea"></div>
-                <a href="#" target="_blank">Click aquí</a>
-                <img src="./img/carrito.jpg" alt="carrito de compras">
+            </div>
+            <div class="swiper-slide-img">
+              <img src="./img/cripto.jpg" alt="criptomonedas">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-detalles">
+              <h3>Administrador de clientes</h3>
+              <div class="swiper-slide-links">
+                <a href="https://macodingcrmcliente.netlify.app/" target="_blank">
+                  <p>Pagina aquí</p>
+                </a>
+                <a href="https://github.com/Exxoga/Administrador-de-clientes" target="_blank">
+                  <p>Codigo aquí</p>
+                </a>
               </div>
-              <div class="carousel-item">
-                <h3>Cotizador Seguro</h3>
-                <div class="linea"></div>
-                <a href="#" target="_blank">Click aquí</a>
-                <img src="./img/seguro.jpg" alt="seguro carro">
+            </div>
+            <div class="swiper-slide-img">
+              <img src="./img/clientes.jpg" alt="clientes">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-detalles">
+              <h3>Buscador Clima</h3>
+              <div class="swiper-slide-links">
+                <a href="https://macodingbuscadorclima.netlify.app/" target="_blank">
+                  <p>Pagina aquí</p>
+                </a>
+                <a href="https://github.com/Exxoga/Buscador-clima" target="_blank">
+                  <p>Codigo aquí</p>
+                </a>
               </div>
-              <div class="carousel-item">
-                <h3>Administrador de Gastos</h3>
-                <div class="linea"></div>
-                <a href="#" target="_blank">Click aquí</a>
-                <img src="./img/presupuesto.jpg" alt="presupuesto">
+            </div>
+            <div class="swiper-slide-img">
+              <img src="./img/clima.jpg" alt="clima">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-detalles">
+              <h3>Carrito de compras</h3>
+              <div class="swiper-slide-links">
+                <a href="https://macodingcart.netlify.app/" target="_blank">
+                  <p>Pagina aquí</p>
+                </a>
+                <a href="https://github.com/Exxoga/Carrito-de-compras" target="_blank">
+                  <p>Codigo aquí</p>
+                </a>
               </div>
-              <div class="carousel-item">
-                <h3>Administrador de Clientes</h3>
-                <div class="linea"></div>
-                <a href="#" target="_blank">Click aquí</a>
-                <img src="./img/clientes.jpg" alt="clientes cartoon">
+            </div>
+            <div class="swiper-slide-img">
+              <img src="./img/carrito.jpg" alt="carrito de compras">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-detalles">
+              <h3>Gasto semanal</h3>
+              <div class="swiper-slide-links">
+                <a href="https://macodingastosemanal.netlify.app/" target="_blank">
+                  <p>Pagina aquí</p>
+                </a>
+                <a href="https://github.com/Exxoga/Gasto-semanal" target="_blank">
+                  <p>Codigo aquí</p>
+                </a>
               </div>
-              <div class="carousel-item">
-                <h3>Buscador del Clima</h3>
-                <div class="linea"></div>
-                <a href="#" target="_blank">Click aquí</a>
-                <img src="./img/clima.jpg" alt="variacion del clima">
+            </div>
+            <div class="swiper-slide-img">
+              <img src="./img/presupuesto.jpg" alt="presupuesto">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-detalles">
+              <h3>Cotizador de seguro</h3>
+              <div class="swiper-slide-links">
+                <a href="https://macodingcotizador.netlify.app/" target="_blank">
+                  <p>Pagina aquí</p>
+                </a>
+                <a href="https://github.com/Exxoga/Cotizador-seguro" target="_blank">
+                  <p>Codigo aquí</p>
+                </a>
               </div>
+            </div>
+            <div class="swiper-slide-img">
+              <img src="./img/seguro.jpg" alt="Seguro para carros">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-detalles">
+              <h3>Blog de Café</h3>
+              <div class="swiper-slide-links">
+                <a href="https://mcodingcafeblog.netlify.app/" target="_blank">
+                  <p>Pagina aquí</p>
+                </a>
+                <a href="https://github.com/Exxoga/Blog-de-caf-" target="_blank">
+                  <p>Codigo aquí</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide-img">
+              <img src="./img/cafe.jpg" alt="café">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-detalles">
+              <h3>Festival de música</h3>
+              <div class="swiper-slide-links">
+                <a href="https://mcodingfestival.netlify.app/" target="_blank">
+                  <p>Pagina aquí</p>
+                </a>
+                <a href="https://github.com/Exxoga/Festival-de-musica" target="_blank">
+                  <p>Codigo aquí</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide-img">
+              <img src="./img/musica.jpg" alt="Seguro para carros">
             </div>
           </div>
         </div>
+        <div id="paginacion" class="swiper-pagination"></div>
       </div>
     </article>
     <div class="button">
@@ -125,7 +225,7 @@
       </div>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer select-footer">
     <div class="footer_div">
       <div class="footer_div_icons">
         <a href="https://github.com/Exxoga" class="footer_icon-1" target="_blank"><img src="./img/github.svg"
@@ -136,7 +236,7 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="./js/materialize.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
   <script src="./js/app.js" type="module"></script>
 </body>
 

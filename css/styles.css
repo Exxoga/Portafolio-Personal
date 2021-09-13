@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p {
+  margin: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -28,7 +32,7 @@ html {
 }
 
 body {
-  background-color: var(--blanco);
+  background: linear-gradient(to top, #ffffff 50%, #212121 100%);
   font-family: 'Audiowide', cursive;
   line-height: 1.75;
   margin: 0;
@@ -46,6 +50,12 @@ h1 {
   font-size: 32px;
 } 
 
+@media (min-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
 h2 {
   font-size: 26px;
 }
@@ -62,14 +72,11 @@ a {
 
 .contenedor {
   background-color: var(--blanco);
-  border-radius: 20px;
-  -webkit-box-shadow: inset 0px 2px 26px -11px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 2px 26px -11px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 2px 26px -11px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 2px 34px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 34px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 34px -2px rgba(0,0,0,0.75);
   min-width: 85vw;
+  border-radius: 20px;
 }
 
 .hidden {
@@ -82,6 +89,7 @@ a {
 
 .text_decoration {
   font-family: 'Press Start 2P', cursive;
+  color: var(--blanco);
   font-weight: 100;
   max-width: 100%;
 }
@@ -109,7 +117,6 @@ a {
 .card {
   padding: 5rem 1rem 5rem 1rem;
   padding-bottom: 5rem;
-  background-color: var(--blanco);
   min-height: 100vh;  
   min-width: 85vw;
   display: flex;
@@ -319,39 +326,36 @@ a {
 }
 /* Typed js */
 
+.hero_text-typed {  
+  font-size: 30px;
+}
+
 .hero_text-typed .typed-responsive {
   color: var(--aqua);
-  font-size: 30px;
 }
 
 .hero_text-typed .typed-html {
   color: var(--naranja);
-  font-size: 30px;
 }
 
 .hero_text-typed .typed-css {
   color: var(--aquaOscuro);
-  font-size: 30px;
 }
 
 .hero_text-typed .typed-javascript {
   color: var(--amarillo);
-  font-size: 30px;
 }
 
 .hero_text-typed .typed-javascript2 {
   color: var(--amarilloAnalogo);
-  font-size: 30px;
 }
 
 .hero_text-typed .typed-linter {
   color: var(--moradoAzul);
-  font-size: 30px;
 }
 
 .hero_text-typed .typed-webpack {
   color: var(--azulOscuro);
-  font-size: 30px;
 }
 
 /* Skillset */
@@ -511,7 +515,6 @@ a {
 /* Profile */
 
 .profile {
-  background-color: var(--negro);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -529,6 +532,9 @@ a {
   -webkit-box-shadow: inset 4px 9px 80px -46px rgba(0,0,0,1);
   -moz-box-shadow: inset 4px 9px 80px -46px rgba(0,0,0,1);
   box-shadow: inset 4px 9px 80px -46px rgba(0,0,0,1);
+-webkit-box-shadow: 0px 2px 34px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 34px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 34px 2px rgba(0,0,0,0.75);
   margin: 0 auto;
 }
 
@@ -547,11 +553,19 @@ a {
   border: solid 2px var(--gris);
 }
 
+
+
 .profile_text {
-  text-align: justify;
+  text-align: left;
   font-size: 18px;
   margin: 20px;
   margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .profile_text {
+    font-size: 15px;
+  }
 }
 
 .profile_text-firma {
@@ -593,6 +607,7 @@ a {
 .footer_div p {
   margin: 0;
   font-size: 16px;
+  text-align: center;
 }
 
 @media (min-width: 900px) {
@@ -625,9 +640,9 @@ a {
   width: 0rem;
   height: 0rem;
   background-color: var(--blanco);
-  -webkit-box-shadow: inset 0px 9px 28px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 9px 28px 0px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 9px 28px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: inset 0px -1px 18px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -1px 18px -5px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -1px 18px -5px rgba(0,0,0,0.75);
   border-radius: 50%;
   transition: 0.3s;
   cursor: pointer;
@@ -682,41 +697,79 @@ a {
 /* Proyectos */
 
 .proyectos {
-  background-color: var(--negro);
-  height: 90vh;
-  display: flex;
-  align-items: center;
+
+  border-radius: 20px;
+  position: relative;
+  height: 60vh;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-/* Estilos Materialize */
-
-.carousel {
-  min-height: 700px;
+@media (min-width: 900px) {
+  .proyectos {
+      max-width: 35vw;
+  -webkit-box-shadow: 2px 3px 18px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 3px 18px 5px rgba(0,0,0,0.75);
+  box-shadow: 2px 3px 18px 5px rgba(0,0,0,0.75);
+    height: 50vh;
+  }
 }
 
-.carousel .carousel-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  width: 500px;
-  height: 500px;
+.proyectos h2 {
+  padding-top: 20px;
 }
 
-.carousel .carousel-item img {
+.proyectos_title {
+  font-family: 'Press Start 2P', cursive;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 15px;
 }
 
-.carousel .indicators .indicator-item {
-  border-radius: 0;
-  transform: rotate(45deg);
-  margin: 0 15px;
+.proyectos_indicador img {
+  transform: rotate(90deg);
+  width: 15%;
+}
+
+/* Swiper */
+
+
+.swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  }
+
+  .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  }
+
+  .swiper-slide img {
+  display: block;
+  width: 100%;
+    border-radius: 20px;
+  }
+
+.swiper-slide-links {
+  display: flex;
+  text-align: center;
+}
+
+.swiper-slide-links a {
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--negro);
+  width: 100%;
+}
+
+.swiper-slide-detalles h3 {
+  margin-bottom: 0;
+}
+
+#paginacion span {
+  width: 16px;
+  height: 16px;
 }

@@ -35,7 +35,7 @@ const typed = new Typed('.typed', {
     '<i class="typed-webpack">Webpack</i>',
     '<i class="typed-javascript">Babel</i>'],
   // stringsElement: '#cadenas-texto',
-  typeSpeed: 75,
+  typeSpeed: 50,
   startDelay: 300,
   backSpeed: 75,
   // smartBackspace: true,
@@ -43,21 +43,23 @@ const typed = new Typed('.typed', {
   backDelay: 1000,
   loop: true,
   loopCount: false,
-  showCursor: true,
+  showCursor: false,
   cursorChar: '|',
   contentType: 'html',
 });
 
 /* Carousel de Imagenes */
 
-document.addEventListener('DOMContentLoaded', () => {
-  const elementos = document.querySelectorAll('.carousel');
-  M.Carousel.init(elementos, {
-    duration: 150,
-    dist: -80,
-    shift: 5,
-    padding: 5,
-    numVisible: 3,
-    noWrap: false
-  });
+const swiper = new Swiper(".mySwiper", {
+  effect: "cube",
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
